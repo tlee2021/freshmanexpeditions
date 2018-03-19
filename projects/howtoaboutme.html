@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>How To - About Me</title>
+
+    <link rel="stylesheet" href="html&css.css" type="text/css" />
+</head>
+
+<body>
+    <ul class="navbar">
+        <a href="index.html"><li>About Me</li></a>
+        <a href="howtoaboutme.html"><li>How To - About Me</li></a>
+        <a href="generativeart.html"><li>Generative Art</li></a>
+        <a href="howtogenerativeart.html"><li>How To - Generative Art</li></a>
+    </ul>
+
+    <h1>How To - About Me</h1>
+
+    <h2>Body</h2>
+    <p>
+        <ol>
+            <li>I created an HTML file for my About Me page and linked it to a CSS file using &lt;link rel="stylesheet" href="htm&css.css" type="text/css" /&gt;. This allows me to give style to multiple pages.</li>
+            <li>In the CSS file I applied the following rules to the body using body {} to give it style.</li>
+            <ol type="I">
+                <li>background-color:black; to make the background of the page the color black</li>
+                <li>color:white; to make all of the text the color white.</li>
+                <li>font-family:roboto; to make all of the text the font Roboto.</li>
+            </ol>
+            These rules make the page more visually appealing.
+        </ol>
+    </p>
+
+    <h2>Navbar</h2>
+    <p>
+        <ol>
+
+            <li>I created the navbar with an unordered list, using the &lt;ul&gt; tags. Each tab on the navbar is a list item, using the &lt;li&gt; tags. I made each tab on the navbar a link that leads to their respective pages by enclosing them in &lt;a&gt;
+                tags and adding href="link" to the opening tag.</li>
+            <li>I also gave the unordered list the class "navbar". This is done to give it style along with the CSS file.</li>
+            <li>In the CSS file I applied the following rules to the "navbar" class using .navbar {} to give it style.</li>
+            <ol type="I">
+                <li>background-color:black; to make the background of the navbar the color black.</li>
+                <li>text-align:center; to align the navbar at the center of the page.</li>
+                <li>border:2px solid white; to give the navbar a border 2 pixels wide and the color white.</li>
+                <li>border-radius:7px; to make the border have rounded corners.</li>
+            </ol>
+            <li>In the CSS file I applied the following rules to the attributes of the "navbar" class using .navbar a {} to give it style.</li>
+            <ol type="I">
+                <li>display:inline-block; to orient the tabs of the navbar horizontally.</li>
+                <li>text-decoration:none; to remove the underline from the tabs.</li>
+                <li>list-style:none; to remove the bullet points from the tabs.</li>
+                <li>padding:5px; to make the space between each of the tabs 5 pixels.</li>
+                <li>margin:5px; to make the space between the tabs and another element 5 pixels.</li>
+                <li>font-size:25px; to make the size of the text in the tabs 25 pixels.</li>
+                <li>color:white; to make the color of the text in the tabs the color white.</li>
+                <li>border:2px solid white; to give each of the tabs a border 2 pixels wide and the color white.</li>
+                <li>border-radius:7px; to make each of the tabs have rounded corners.</li>
+            </ol>  
+            <li>In the CSS file I applied the following rules to the class "navbar" upon hovering using .navbar hover{rules} to give it style when hovering on it.</li>
+            <ol type="I">
+                <li>transform: scale(1.05); to make the tab grow by 105%.</li>
+                <li>transition: all .2s ease-in-out; to make the transition 0.2 seconds long.</li>
+                <li>background-color:white; to make the background of the tab white.</li>
+                <li>animation:rainbow 1s linear infinite alternate; to make the link go through the animation called "rainbow" in 1 second on an infinite loop. (I didn't actually write this rule myself, I found it online and was successful at tweaking it to fit what I wanted so I <i>think</i> I understand what it means}.</li>
+            </ol>
+            <li>I also added the following rule to define the colors of the animation.</li>
+            <ol type="I">
+                <li>@keyframes rainbow {<br>
+                    0%   {color:red;        }<br>
+                    10%  {color:orange;     }<br>
+                    20%  {color:gold;       }<br>
+                    30%  {color:yellow;     }<br>
+                    40%  {color:yellowgreen;}<br>
+                    50%  {color:green;      }<br>
+                    60%  {color:cyan;       }<br>
+                    70%  {color:blue;       }<br>
+                    80%  {color:violet;     }<br>
+                    90%  {color:magenta;    }<br>
+                    100% {color:indigo;     }<br>
+                    }<br>
+                    to define the colors of the animation called "rainbow".  Each color is 10% of the 1 second animation.</li>
+            </ol>
+            These rules make the navbar more visually appealing.
+        </ol>
+    </p>
+    
+    <h2>Paragraphs</h2>
+    <p>
+        <ol>
+            <li>I enclosed paragraphs (and lists) in &lt;p&gt; tags to define them as paragraphs.  Doing this makes information more orgnaized.</li>
+        </ol>
+    </p>
+    
+    <h2>Headlines</h2>
+    <p>
+        <ol>
+            <li>I created headlines of the largest size using the &lt;h1&gt; tags.  Headlines make information more organized.</li>
+            <li>In the CSS file I applied the following rule to the headlines using h1 {} to give them style.</li>
+            <ol type="I">
+                <li>border:2pc solid white; to give each of the headlines a border 2 pixels wide and the color white.</li>
+                <li>border-radius:7px; to make the border have rounded corners.</li>
+            </ol>
+            <li>I created sub headlines (headlines of the second largest size) using the &lt;h2&gt; tags.  Sub headlines make information more organized.</li>
+            <li>In the CSS file I applied the following rules to the headlines using h2 {} to give them style.</li>
+            <ol type="I">
+                <li>border:2pc solid white; to give each of the headlines a border 2 pixels wide and the color white.</li>
+                <li>border-radius:7px; to make the border have rounded corners.</li>
+            </ol>
+            These rules make the headlines more visually appealing, and provide more clear dividers between different information.
+        </ol>
+    </p>
+    
+    <h2>Images</h2>
+    <p>
+        <ol>
+            <li>I added images to my page using &lt;img src=""&gt;.  Images make the page more visually appealing.</li>
+        </ol>
+    </p>
+    
+    <h2>Lists</h2>
+    <p>
+        <ol>
+            <li>I created ordered lists using &lt;ol&gt; tags.  Lists organize information.</li>
+            <li>I created list items using &lt;li&gt; tags.</li>
+            <li>I created sublists by putting &lt;ol&gt; tags in place of &lt;li&gt; tags.</li>
+            <li>I added type="I" inside the opening tags of the sublists to change the numbers to capital roman numerals.</li>
+        </ol>
+    </p>
+    
+    <h2>Links</h2>
+    <p>
+        As an added easter egg, I hid a link somehwere throughout the pages and also made it so when you hover on them they flash a rainbow animation.  I thought it would be cool, even though you could find the link by viewing the page source.
+        <ol>
+            <li>To actually make the text a clickable link, I used &lt;lnk&gt; tags to designate the text of the link and &lt;a&gt; to designate the url of the link.   In the opening &lt;a&gt; tag I put href="" for thr url.</li>
+            <li>I gave all of the links (there's only 1 for now) the class "link" to give them style.</li>
+            <li>In the CSS file I applied the following rules to the class "link" using .link {} to give them style.</li>
+            <ol type="I">
+                <li>text-decoration:none; to remove the underline from the links.</li>
+                <li>color:white; to make the links the color white.</li>
+            </ol>
+            <li>In the CSS file I did the same thing I did with the navbar, applied the following rule to the class "link" upon hovering useing .link hover{} to give them style. (I didn't actually write this myself, I found it online and was successful at tweaking it to fit what I wanted so I <i>think</i> I understand what it means).</li>
+            <ol type="I">
+                <li>animation:rainbow 1s linear infinite alternate; to make the link go through the animation called "rainbow" in 1 second on an infinite loop.</li>
+            </ol>
+            <li>I also added the following rule to define the colors of the animation.</li>
+            <ol type="I">
+                <li>@keyframes rainbow {<br>
+                    0%   {color:red;        }<br>
+                    10%  {color:orange;     }<br>
+                    20%  {color:gold;       }<br>
+                    30%  {color:yellow;     }<br>
+                    40%  {color:yellowgreen;}<br>
+                    50%  {color:green;      }<br>
+                    60%  {color:cyan;       }<br>
+                    70%  {color:blue;       }<br>
+                    80%  {color:violet;     }<br>
+                    90%  {color:magenta;    }<br>
+                    100% {color:indigo;     }<br>
+                    }<br>
+                    to define the colors of the animation called "rainbow".  Each color is 10% of the 1 second animation.</li>
+            </ol>
+        </ol>
+    </p>
+</body>
+</html>

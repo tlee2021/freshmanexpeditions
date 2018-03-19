@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>How To - Generative Art</title>
+    
+    <link rel="stylesheet" href="html&css.css" type="text/css" />
+</head>
+<body>
+    <ul class="navbar">
+        <a href="index.html"><li>About Me</li></a>
+        <a href="howtoaboutme.html"><li>How To - About Me</li></a>
+        <a href="generativeart.html"><li>Generative Art</li></a>
+        <a href="howtogenerativeart.html"><li>How To - Generative Art</li></a>
+    </ul>
+    
+    <h1>How To - Generative Art</h1>
+    
+    <h2>Rocket</h2>
+    <p>
+        I designed the rocket using more complex shapes, with beginShape() and endShape().  In between I used vertex(x, y) to define the vertices of the shapes.  I decided to use beginShape and endShape because the shapes I needed were more complex than quadrilatrals (the three main stages of the rocket are hexagons, and the top is a septagon).  
+    </p>
+    <div class="imagecontainer">
+        <img class="image" src="https://cms.jotform.com/uploads/image_upload/image_upload/global/47221_Screenshot 2018-01-19 at 9.39.10 AM.png" height=400>
+        <img class="image" src="https://cms.jotform.com/uploads/image_upload/image_upload/global/47222_Screenshot 2018-01-19 at 9.43.29 AM.png" height=400>
+        <img class="image" src="https://cms.jotform.com/uploads/image_upload/image_upload/global/47223_Screenshot 2018-01-19 at 9.46.06 AM.png" height=400>
+    </div>
+    
+    <h2>Flames</h2>
+    <p>
+        The flames coming from the rocket thrusters are designed with triangles.  If you consider the triangles to be in the "up" orientation, then the two vertices on the bottom have a random() function in place of their x- and y- positions.  The parameters are set so that each time the triangle is drawn, a random float between the parameters is returned and the bottom two vertices will be randomly shifted within a few pixels.  Also, in the RGB digit for the flame triangles, I replaced the green digit with a random() function, and set the parameters so that a random float between the parameters will be returned and the triangles will be a random shade of orange or yellow.  All of this is inside a draw function, so the triangles are drawn repeatedly and look like flickering flames. 
+    </p>
+    <div class="imagecontainer">
+        <img class="image" src="https://cms.jotform.com/uploads/image_upload/image_upload/global/47227_Screenshot 2018-01-19 at 10.33.05 AM.png" height=200>
+        <img class="image" src="https://cms.jotform.com/uploads/image_upload/image_upload/global/47228_Screenshot 2018-01-19 at 10.37.36 AM.png" height=100>
+    </div>
+    
+    <h2>Ground and Launch Pad</h2>
+    <p>
+        The ground and launch pad are created with rectangles.  They are colored different shades of grey, to give the appearence of asphalt and metal.
+    </p>
+    <div class="imagecontainer">
+        <img class="image" src="https://cms.jotform.com/uploads/image_upload/image_upload/global/47234_Screenshot 2018-01-19 at 10.50.46 AM.png">
+        <img class="image" src="https://cms.jotform.com/uploads/image_upload/image_upload/global/47230_Screenshot 2018-01-19 at 10.41.25 AM.png" height=200>
+    </div>
+    
+    <h2>Clouds</h2>
+    <p>
+        I created clouds by overlapping ellipses and arcs.  They are colored white with fill(255) and have no outline with noStroke().  
+    </p>
+    <div class="imagecontainer">
+        <img class="image" src="https://cms.jotform.com/uploads/image_upload/image_upload/global/47232_Screenshot 2018-01-19 at 10.47.47 AM.png" heigh=200>
+        <img class="image" src="https://cms.jotform.com/uploads/image_upload/image_upload/global/47231_Screenshot 2018-01-19 at 10.45.11 AM.png" height=200>
+    </div>
+    
+    <h2>Liftoff</h2>
+    <p>
+        I replaced the y-position of the ground, launch pad, and clouds with a variable (appropriately named yPos).  I set the variable to 0, and added the correct value to make the ground, launch pad, and clouds appear "normal".  I then add assigned 3 using <img src="https://cms.jotform.com/uploads/image_upload/image_upload/global/47236_Screenshot 2018-01-19 at 10.56.22 AM.png" height=15> so that each time everything is redrawn, the ground, launch pad, and clouds will be shifted 3 pixels down.  All of this is inside the draw function, so they are drawn repeatedly.  The rocket itself stays in place, but the surrounding objects appear to be moving, giving the appearence that the rocket is moving up.
+    </p>
+    
+    <h2>Changing Sky</h2>
+    <p>
+        The sky is created by coloring the backround a shade of light blue, using background(0, skycolor, skycolor2).  The variables skycolor and skycolor2 are both set to 255, so the sky is the color (0,255,255), or this.  I subtract assigned 0.5 from skycolor using <img src="https://cms.jotform.com/uploads/image_upload/image_upload/global/47237_Screenshot 2018-01-19 at 11.00.02 AM.png" height>, and subtract assigned 0.2 from skycolor2 using <img src="https://cms.jotform.com/uploads/image_upload/image_upload/global/47243_Screenshot 2018-01-19 at 11.00.08 AM.png">.  This is all inside the draw function, so the sky is redrawn repeatedly.  Each time it is drawn, the color shifts from the original light blue, to a darker blue, and eventually to black, to make it look like the rocket has exited the atmosphere and entered space.
+    </p>
+    
+    <h2>Stars and Moon</h2>
+    <p>
+        I created stars using a series of for loops.  One for loop has the initiator to set the variable i to 45.  It tests if i is less than the width.  It then updates to increase i by 100.  Inside the for loop is a second for loop; similar to the first one, it sets the variable j to 60, tests if it is less than the width, and increases it by 200.  Also inside the first for loop is the statement var ellipsesize = 1, to set the variable ellipse size to 1, and ellipse(i,j,ellipsesize,ellipsesize), to draw an ellipse with i and j as the x- and y- position, and ellipsesize as the height and width of the ellipse.  The result is a grid of circles with a gap between each row.   (imagine this, but the circles are smaller)
+    </p>
+    <div class="imagecontainer">
+        <img class="image" src="https://cms.jotform.com/uploads/image_upload/image_upload/global/47244_Screenshot 2018-01-19 at 2.22.05 PM.png">
+        <img class="image" src="https://cms.jotform.com/uploads/image_upload/image_upload/global/47252_Screenshot 2018-01-19 at 2.49.25 PM.png" height=250>
+    </div>
+    
+    <p>
+        Then, there's another set of for loops almost identical to the first one, except i and j are initially set slightly off.  k (in place of i) = 100 and l (in place of j) = 160.  The result is another grid of circles offset enough to the left and down to nestle within the first grid of circles. (imagine this, but the circles are smaller)
+    </p>
+    <div class="imagecontainer">
+        <img class="image" src="https://cms.jotform.com/uploads/image_upload/image_upload/global/47245_Screenshot 2018-01-19 at 2.24.12 PM.png">
+        <img class="image" src="https://cms.jotform.com/uploads/image_upload/image_upload/global/47253_Screenshot 2018-01-19 at 2.50.03 PM.png" height=250>
+    </div>
+    
+    <p>
+         All together, they form a hexagonal pattern of circles. (imagine this, but the circles are smaller)
+    </p>
+    
+     <div class="imagecontainer">
+        <img class="image" src="https://cms.jotform.com/uploads/image_upload/image_upload/global/47254_Screenshot 2018-01-19 at 2.52.24 PM.png" height=250>
+    </div>
+    
+    <p>
+        I created a moon with one ellipse in the upper right corner, and another, smaller, ellipse partially overlapping the first one.  The second ellipse is the same color as the sky, and changes colors along with the sky, so it appears "invisible".  
+    </p>
+    <div class="imagecontainer">
+        <img class="image" src="https://cms.jotform.com/uploads/image_upload/image_upload/global/47246_Screenshot 2018-01-19 at 2.28.03 PM.png">
+        <img class="image" src="https://cms.jotform.com/uploads/image_upload/image_upload/global/47251_Screenshot 2018-01-19 at 2.38.05 PM.png" height=250>
+    </div>
+    
+    <p>
+        In order to make the stars and moon appear "in space", or when the sky is a certain color, I used a conditional.  An if statement says that if skycolor is less than 75, then the fill and stroke of the stars and moon will be white.  I also put an else statement that says if the parameters are not true (skycolor is not less than 75), then the stars and moon will have no fill and no stroke, making them "invisible".
+    </p>
+    <div class="imagecontainer">
+        <img class="image" src="https://cms.jotform.com/uploads/image_upload/image_upload/global/47249_Screenshot 2018-01-19 at 2.29.30 PM.png">
+    </div>
+    
+    <h2>Clickable Stars</h2>
+    <p>
+        As an interactive feature, I made it so that when you click the screen stars briefly appear.  I used beginShape() and endShape() to create a 4 pointed star (an octogan).  The star will be drawn where the mouse cursor is.  I also put a conditional nearly identical to the one for the white stars and moon, so that if you click you won't actually see the stars until the sky is a certain color.  In this case, however, I made the stars yellow.  All of this is in a function, appropriately named starz.    
+    </p>
+    <div class="imagecontainer">
+        <img class="image" src="https://cms.jotform.com/uploads/image_upload/image_upload/global/47255_Screenshot 2018-01-19 at 3.07.00 PM.png">
+    </div>
+    
+    
+    <p>
+        I also made a mouseClicked function and put the starz function inside it, so when the mouse is clicked it calls the starz function and draws a star.  Since the star is drawn only once, it appears briefly, giving the appearence that it is twinkling in the distance.
+    </p>
+    <div class="imagecontainer">
+        <img class="image" src="https://cms.jotform.com/uploads/image_upload/image_upload/global/47256_Screenshot 2018-01-19 at 3.08.01 PM.png">
+    </div>    
+    
+    
+</body>
+</html>

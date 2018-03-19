@@ -1,0 +1,87 @@
+body {
+    background-color: black; 
+    color: #ffffff; 
+    font-family:roboto;
+}
+
+.navbar {
+    background-color:black;
+    text-align:center;
+    border:2px solid white;
+    border-radius:7px;
+}
+
+.navbar a{
+    display:inline-block;
+    text-decoration:none; 
+    list-style:none;
+    padding:5px; 
+    margin:5px;
+    font-size: 25px;
+    color:white;
+    border:2px solid white;
+    border-radius:7px;
+}
+
+.navbar :hover{
+    background-color:white;
+    transform: scale(1.05); 
+    transition: all .2s ease-in-out;
+     animation:rainbow 1s linear infinite alternate;
+}
+@keyframes rainbow {
+    0%   {color:red;        }
+    10%  {color:orange;     }
+    20%  {color:gold;       }
+    30%  {color:yellow;     }
+    40%  {color:yellowgreen;}
+    50%  {color:green;      }
+    60%  {color:cyan;       }
+    70%  {color:blue;       }
+    80%  {color:violet;     }
+    90%  {color:magenta;    }
+    100% {color:indigo;     }
+}
+
+h1 {
+    border:2px solid white;
+    border-radius:7px;
+}
+
+h2 {
+    border:2px solid white;
+    border-radius:7px;
+}
+
+.link {
+    text-decoration: none;
+    color:white;
+}
+
+.link :hover{
+  animation:rainbow 1s linear infinite alternate;
+}
+
+@keyframes rainbow {
+    0%   {color:red;        }
+    10%  {color:orange;     }
+    20%  {color:gold;       }
+    30%  {color:yellow;     }
+    40%  {color:yellowgreen;}
+    50%  {color:green;      }
+    60%  {color:cyan;       }
+    70%  {color:blue;       }
+    80%  {color:violet;     }
+    90%  {color:magenta;    }
+    100% {color:indigo;     }
+}
+
+.imagecontainer{
+    text-align:center;
+}
+
+.image{
+    display:inline-block;
+    margin: 5px;
+
+}
